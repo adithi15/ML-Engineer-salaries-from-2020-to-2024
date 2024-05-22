@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Matte black background */
+    color: white; /* White text color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Separate borders for glassmorphism effect */
+    border-spacing: 0; /* No spacing between cells */
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow for glassmorphism effect */
+    backdrop-filter: blur(1.5px); /* Blur effect for glassmorphism */
+    -webkit-backdrop-filter: blur(1.5px); /* Safari blur effect */
+    border-radius: 10px; /* Rounded corners for glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Transparent border */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+th, td {
+    padding: 10px; /* Reduced padding for a sleeker look */
+    text-align: left;
+    color: white; /* White text color */
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for headers */
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent text color */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent background for even rows */
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+}
+
+#line-chart {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background for chart */
+    border-radius: 10px; /* Rounded corners for chart */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow for chart */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Transparent border */
+    margin-bottom: 20px; /* Added margin for separation */
+}
+
+#job-titles-table {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background for job titles table */
+    border-radius: 10px; /* Rounded corners for job titles table */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow for job titles table */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Transparent border */
+    display: none; /* Initially hidden */
+}

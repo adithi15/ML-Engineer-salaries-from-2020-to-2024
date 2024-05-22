@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Engineer Salaries</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ML Engineer Salaries (2020-2024)</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="line-chart"></canvas> <!-- Line chart placeholder -->
+            </div>
+            <div class="col-md-6">
+                <table id="salary-table">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Year</th>
+                            <th onclick="sortTable(1)">Number of Total Jobs</th>
+                            <th onclick="sortTable(2)">Average Salary in USD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <table id="job-titles-table" style="display:none;"> <!-- Second table initially hidden -->
+                    <thead>
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Number of Jobs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aggregated job titles data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
